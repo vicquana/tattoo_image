@@ -3,7 +3,7 @@ import update_biography
 import generate_json
 
 # Run update_biography
-update_biography.update_biography()
+# update_biography.update_biography()
 
 # Run generate_json
 generate_json.generate_json('vicquana', 'tattoo_image', '')
