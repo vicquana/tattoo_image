@@ -3,10 +3,20 @@ import update_biography
 import generate_json
 
 # Run update_biography
-# update_biography.update_biography()
+update_biography.update_biography()
+
+# Add changes
+subprocess.run(["git", "add", "."])
+
+# Commit changes
+commit_message = "update biography text files in each folder"
+subprocess.run(["git", "commit", "-m", commit_message])
+
+# Push changes
+subprocess.run(["git", "push"])
 
 # Run generate_json
-generate_json.generate_json('vicquana', 'tattoo_image', '')
+generate_json.generate_json('vicquana', 'images_for_server', '')
 # generate_json_private_repo.generate_json('vicquana', 'images_for_server', '')
 
 # commit git
@@ -15,7 +25,7 @@ generate_json.generate_json('vicquana', 'tattoo_image', '')
 subprocess.run(["git", "add", "."])
 
 # Commit changes
-commit_message = "update biography"
+commit_message = "update json"
 subprocess.run(["git", "commit", "-m", commit_message])
 
 # Push changes
